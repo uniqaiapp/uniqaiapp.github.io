@@ -15,7 +15,7 @@ AUTHOR = {"@type": "Person", "name": "Vlad Yasinski", "url": "https://www.roimob
           "sameAs": ["https://www.roimobi.com", "https://www.linkedin.com/in/vlad-yasinski-ua5er/", "https://github.com/ua5er"]}
 TITLE = "Free AI Video and Image Prompt Tools, Open Source | UniqAI"
 DESC = ("Free, open-source AI video and image prompt tools from UniqAI: a prompt gallery, a storyboard builder, "
-        "a UGC ad script checker and an image prompt checker. They run in your browser.")
+        "a UGC ad script checker, an image prompt checker and a Russian AI-phrase checker. They run in your browser.")
 
 TOOLS = [
     {"slug": "video-director", "name": "Video Director", "kind": "Storyboard builder",
@@ -34,6 +34,10 @@ TOOLS = [
      "job": "Stop AI portraits from looking plastic by fixing the prompt first.",
      "get": "A 0 to 100 score, the exact words that cause waxy skin and a fill-in photo brief to copy. It checks wording only and cannot see your image.",
      "uniq": ("https://uniqai.app/image/text-to-image", "Make an image in UniqAI")},
+    {"slug": "deslop-ru", "name": "deslop-ru", "kind": "Russian text checker",
+     "job": "Find the phrases that make a Russian draft sound machine-written.",
+     "get": "Highlights stock AI phrasing in Russian text with the reason and a plainer fix for each hit. It runs in your browser and finds patterns; it does not prove who wrote the text.",
+     "uniq": ("https://uniqai.app/chat", "Open UniqAI chat")},
 ]
 for t in TOOLS:
     t["url"] = f"{BASE}{t['slug']}/"
@@ -121,7 +125,7 @@ def index_html():
 <meta property="og:image" content="{og}">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
-<meta property="og:image:alt" content="UniqAI open source: four free AI video and image prompt tools that run in your browser">
+<meta property="og:image:alt" content="UniqAI open source: five free AI prompt and text tools that run in your browser">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(TITLE)}">
 <meta name="twitter:description" content="{esc(DESC)}">
@@ -148,7 +152,7 @@ def index_html():
 <div class="hero-cta"><a class="btn" href="#tools">Try in your browser</a><a class="btn btn-ghost" href="https://github.com/uniqaiapp" rel="noopener">All repositories</a></div>
 </div></section>
 <section class="tools wrap" id="tools" aria-labelledby="tools-h"><h2 id="tools-h">Try in your browser</h2>
-<p class="sub">Four tools, nothing to install. Open one, paste or pick an idea, copy the result into the model you use.</p>
+<p class="sub">Five tools, nothing to install. Open one, paste or pick an idea, copy the result into the model you use.</p>
 {tools}
 </section>
 <section class="repos wrap" id="repos" aria-labelledby="repos-h"><h2 id="repos-h">All repositories</h2>
@@ -185,7 +189,7 @@ def robots():
 
 def llms():
     out = ["# UniqAI open-source tools: free AI video and image prompt tools", "",
-           "> Four free tools from UniqAI (https://uniqai.app/), an AI photo, video and chat app. They write, check and collect prompts for AI video and image models, run in the browser and are open source. Curated by Vlad Yasinski (https://www.linkedin.com/in/vlad-yasinski-ua5er/).", "",
+           "> Five free tools from UniqAI (https://uniqai.app/), an AI photo, video and chat app. They write, check and collect prompts for AI video and image models, check Russian text for stock AI phrasing, run in the browser and are open source. Curated by Vlad Yasinski (https://www.linkedin.com/in/vlad-yasinski-ua5er/).", "",
            "## Tools", ""]
     out += [f"- [{t['name']}]({t['url']}): {t['kind']}. {t['job']} Repo: {t['repo']}" for t in TOOLS]
     out += ["", "## Other repositories", "", "- [uniqaiapp on GitHub](https://github.com/uniqaiapp): " + ", ".join(s for s, _ in REPOS),

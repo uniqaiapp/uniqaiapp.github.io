@@ -1,0 +1,26 @@
+# UniqAI open-source tools: free AI video and image prompt tools
+
+> Four free tools from UniqAI (https://uniqai.app/), an AI photo, video and chat app. They write, check and collect prompts for AI video and image models, run in the browser and are open source. Curated by Vlad Yasinski (https://www.linkedin.com/in/vlad-yasinski-ua5er/).
+
+## Tools
+
+- [Video Director](https://uniqaiapp.github.io/video-director/): Storyboard builder. Turn a one-line idea into a timed storyboard and a paste-ready AI video prompt. Repo: https://github.com/uniqaiapp/video-director
+- [AI Video Prompt Gallery](https://uniqaiapp.github.io/awesome-ai-video-prompts/): Prompt gallery. Search real AI video prompts, filter by model and copy the one you need. Repo: https://github.com/uniqaiapp/awesome-ai-video-prompts
+- [UGC Ad Director](https://uniqaiapp.github.io/ugc-ad-director/): Ad script checker. Check a UGC ad script before you spend money generating it. Repo: https://github.com/uniqaiapp/ugc-ad-director
+- [no-plastic](https://uniqaiapp.github.io/no-plastic/): Image prompt checker. Stop AI portraits from looking plastic by fixing the prompt first. Repo: https://github.com/uniqaiapp/no-plastic
+
+## Other repositories
+
+- [uniqaiapp on GitHub](https://github.com/uniqaiapp): video-director, awesome-ai-video-prompts, ugc-ad-director, ai-video-pricing, no-plastic, suno-producer, model-router, token-diet, skill-shrinker, deslop-ru
+- [HablaMusic suno-latin-producer](https://hablamusic.github.io/suno-latin-producer/): sister project, Suno prompts and lyrics for Latin genres
+
+## Facts
+
+- UniqAI runs Nano Banana for images and Kling and Veo for video.
+- Tool notes for other models (Wan, Seedance, Runway, Flux, Midjourney, SDXL and others) are written for those models, which UniqAI does not run.
+- Code is MIT licensed; prompt collections and vocabularies are CC BY 4.0.
+- The tools run in the browser. Only anonymous page views and button clicks are counted, never the text you type.
+
+## Author
+
+- Vlad Yasinski: https://www.roimobi.com, https://www.linkedin.com/in/vlad-yasinski-ua5er/, https://github.com/ua5er

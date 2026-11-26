@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uniqaiapp.github.io/sitemap.xml
+Sitemap: https://uniqaiapp.github.io/video-director/sitemap.xml
+Sitemap: https://uniqaiapp.github.io/awesome-ai-video-prompts/sitemap.xml
+Sitemap: https://uniqaiapp.github.io/ugc-ad-director/sitemap.xml
+Sitemap: https://uniqaiapp.github.io/no-plastic/sitemap.xml
